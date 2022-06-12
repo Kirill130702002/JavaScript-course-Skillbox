@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="/" method="POST" id="form" class="form" style="margin-bottom: 300px;">
+      <div class="row g-3" style="margin-bottom: 30px;">
+        <div class=" col">
+          <label class="label" for="name">Введите имя</label>
+          <input id="name" required type="text" class="form-control" name="name" placeholder="Имя" aria-label="Имя">
+        </div>
+        <div class="col">
+          <label class="label" for="surname">Введите фамилию</label>
+          <input id="surname" required type="text" class="form-control" name="surname" placeholder="Фамилия"
+            aria-label="Фамилия">
+        </div>
+        <div class="col">
+          <label class="label" for="surnameFather">Введите Отчество</label>
+          <input id="surnameFather" required type="text" class="form-control" name="surnameFather"
+            placeholder="Отчество" aria-label="Отчество">
+        </div>
+      </div>
+      <div class="row g-3" style=" margin-bottom: 30px;">
+        <div class="col">
+          <label class="label" for="dateBirth">Введите дату вашего рождения</label>
+          <input id="dateBirth" required type="date" class="form-control" name="dateBirth" placeholder="Дата рождения"
+            value="2000-01-01" min="1900-01-01" max="2021-12-31">
+        </div>
+        <div class="col">
+          <label class="label" for="dateBeginning">Введите дату начала обучения</label>
+          <input id="dateBeginning" required type="date" class="form-control" name="dateBeginning"
+            placeholder="Дата рождения" value="2020-01-01" min="2000-01-01" max="2021-12-31">
+        </div>
+        <div class="col">
+          <label class="label" for="faculty">Введите факультет</label>
+          <input id="faculty" required type="text" class="form-control" name="faculty" placeholder="Факультет"
+            aria-label="Факультет">
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" id="btn">Зарегестрировать</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="row g-3" style="margin-bottom: 30px;">
+      <div class=" col">
+        <label class="label" for="name">Поиск по ФИО</label>
+        <input id="filterName" type="text" class="form-control" name="name" placeholder="ФИО" aria-label="ФИО">
+      </div>
+      <div class="col">
+        <label class="label" for="surname">Поиск по Годам</label>
+        <input id="filterBirth" type="text" class="form-control" placeholder="Полных лет" aria-label="Полных лет">
+      </div>
+      <div class="col">
+        <label class="label" for="surnameFather">Поиск по году обучения</label>
+        <input id="filterBeginning" type="text" class="form-control" placeholder="Год обучения"
+          aria-label="Год обучения">
+      </div>
+      <div class="col">
+        <label class="label" for="surnameFather">Поиск по факультету</label>
+        <input id="filterFaculty" type="text" class="form-control" placeholder="факультет" aria-label="факультет">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-table">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" class="name">ФИО</th>
+          <th scope="col" class="birth">Полных лет</th>
+          <th scope="col" class="beginning">Год обучения</th>
+          <th scope="col" class="facultyt">Факультет</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

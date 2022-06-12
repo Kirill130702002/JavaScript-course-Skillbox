@@ -1,0 +1,35 @@
+.list {
+  width: 1000px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+}
+
+.hidden-card {
+  visibility: hidden;
+  /*visibility: visible;*/
+}
+
+.item-card {
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 40px 0 0 0;
+  width: 200px;
+  height: 130px;
+  background-color: rgb(194, 189, 189);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 28px;
+  z-index: 10;
+  list-style: none;
+}
+
+.item-card:not(:nth-child(4n)) {
+  margin-right: 20px;
+} 
+
+.nature {
+  visibility: visible initial;
+  background-color: rgb(248, 135, 135);
+}

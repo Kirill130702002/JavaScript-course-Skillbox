@@ -1,0 +1,17 @@
+.container {
+  margin: 100px auto;
+}
+
+.container-table {
+  margin: 0px 100px ;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.table .work {
+  background-color: rgb(151, 241, 139);
+}
